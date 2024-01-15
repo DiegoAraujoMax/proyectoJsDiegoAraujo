@@ -1,11 +1,170 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
-  </head>
-  <body>
-    <script src="./js/index.js"></script>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bodega Online</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Bodega Online</h1>
+  </header>
+
+  <main>
+    <section id="categorias">
+      <div class="categoria">
+        <h2>Vinos</h2>
+        <div class="bebida-container">
+          <div class="tarjeta" data-categoria="Vinos" data-tipo="Tinto" data-precio="299" data-stock="10">
+            <p>Tinto</p>
+            <p>Precio: $299</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+          <div class="tarjeta" data-categoria="Vinos" data-tipo="Blanco" data-precio="499" data-stock="8">
+            <p>Blanco</p>
+            <p>Precio: $499</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+          <div class="tarjeta" data-categoria="Vinos" data-tipo="Merlot" data-precio="799" data-stock="5">
+            <p>Merlot</p>
+            <p>Precio: $799</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <h2>Cerveza</h2>
+        <div class="bebida-container">
+          <div class="tarjeta" data-categoria="Cerveza" data-tipo="Rubia" data-precio="140" data-stock="15">
+            <p>Rubia</p>
+            <p>Precio: $140</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+          <div class="tarjeta" data-categoria="Cerveza" data-tipo="Negra" data-precio="200" data-stock="12">
+            <p>Negra</p>
+            <p>Precio: $200</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+          <div class="tarjeta" data-categoria="Cerveza" data-tipo="Roja" data-precio="160" data-stock="10">
+            <p>Roja</p>
+            <p>Precio: $160</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <h2>Whisky</h2>
+        <div class="bebida-container">
+          <div class="tarjeta" data-categoria="Whisky" data-tipo="Escocés" data-precio="5500" data-stock="7">
+            <p>Escocés</p>
+            <p>Precio: $5500</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+          <div class="tarjeta" data-categoria="Whisky" data-tipo="Irlandés" data-precio="3600" data-stock="5">
+            <p>Irlandés</p>
+            <p>Precio: $3600</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+          <div class="tarjeta" data-categoria="Whisky" data-tipo="Inglés" data-precio="900" data-stock="8">
+            <p>Inglés</p>
+            <p>Precio: $900</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="categoria">
+        <h2>Otros</h2>
+        <div class="bebida-container">
+          <div class="tarjeta" data-categoria="Otros" data-tipo="Vodka" data-precio="449" data-stock="10">
+            <p>Vodka</p>
+            <p>Precio: $449</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+          <div class="tarjeta" data-categoria="Otros" data-tipo="Gin" data-precio="789" data-stock="6">
+            <p>Gin</p>
+            <p>Precio: $789</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+          <div class="tarjeta" data-categoria="Otros" data-tipo="Fernet" data-precio="536" data-stock="9">
+            <p>Fernet</p>
+            <p>Precio: $536</p>
+            <div class="acciones">
+              <button class="restar">-</button>
+              <span class="contador">0</span>
+              <button class="sumar">+</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <div id="carrito">
+      <!--carrito -->
+    </div>
+  </main>
+
+  <footer>
+    <div>
+      <h3>Nosotros</h3>
+      <p>Somos una bodega online comprometida con la calidad y variedad de nuestras bebidas.</p>
+    </div>
+    <div>
+      <h3>Contacto</h3>
+      <p>Correo: info@bodegaonline.com</p>
+      <p>Teléfono: +123 456 7890</p>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
 </html>
+
